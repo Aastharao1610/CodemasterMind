@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
 const Timer = ({ onTimeUpdate, onTimeLimitExceeded }) => {
-  const timeLimit = 1 * 60; // 10 minutes in seconds
-  const warningTime = 15; // 15 seconds
+  const timeLimit = 20 * 60; // 10 minutes in seconds
+  const warningTime = 2*60; // 15 seconds
   const [remainingTime, setRemainingTime] = useState(timeLimit);
 
   useEffect(() => {

@@ -15,6 +15,6 @@ import userRouter from './routes/auth.routes.js'
 //routes declaration
 app.use("/api/v1/users",userRouter)
 
-// http://localhost:3000/api/v1/users/register
-// http://localhost:3000/api/v1/users/signup
+// http://localhost:3000/api/v1/users/singup
+// http://localhost:3000/api/v1/users/login
 export {app}

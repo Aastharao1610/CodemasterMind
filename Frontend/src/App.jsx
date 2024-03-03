@@ -1,9 +1,14 @@
-import React from 'react'
+// App.js
+import React from 'react';
+import { SubmitProvider } from './SubmitContext';
+import Quiz from './Quiz';
 
-function App() {
+const App = () => {
   return (
-    <div>App</div>
-  )
-}
+    <SubmitProvider>
+      <Quiz />
+    </SubmitProvider>
+  );
+};
 
-export default App
+export default App;

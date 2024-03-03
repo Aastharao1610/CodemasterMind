@@ -27,6 +27,9 @@ const QuizLayout = ({ children }) => {
     navigate('/scoreboard');
   };
 
+  // Log the value of isSubmitted
+  console.log("isSubmitted:", isSubmitted);
+
   return (
     <div className="flex justify-center items-center h-full bg-gray-100">
       <div className="p-4 m-10 w-4/5 border border-gray-300 bg-zinc-200">
@@ -36,7 +39,7 @@ const QuizLayout = ({ children }) => {
         {/* Add your timer component here */}
         <Timer onTimeUpdate={handleTimeUpdate} onTimeLimitExceeded={handleTimeLimitExceeded} />
         {/* Example of using isSubmitted in a button click */}
-        <button onClick={handleSubmit}>Submit Quiz</button>
+        {/* <button onClick={handleSubmit}>Submit Quiz</button> */}
       </div>
     </div>
   );
@@ -46,6 +49,4 @@ QuizLayout.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
-
 export default QuizLayout;
-

@@ -1,16 +1,19 @@
 import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 
-
 function Header() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [iconRotation, setIconRotation] = useState(0);
+  const [iconRotation, setIconRotation] = useState(0)
+  
 
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
     setIconRotation(iconRotation + 180); // Rotate by 180 degrees on each click
   };
 
+  
+
+  
   return (
     <header className="sticky z-50 top-0 bg-white border-b border-green-500 px-0 lg:px-10 py-2.5">
       <div className="flex justify-between items-center mx-4 max-w-screen-xl">
@@ -18,19 +21,23 @@ function Header() {
           <img src="green.png" className="mr-6 h-12" alt="Logo" />
         </Link>
 
-        <ul className="flex flex-col mt-20 font-medium lg:flex-row lg:space-x-8 lg:mt-4">
+        <ul className="flex flex-col mt-20 font-medium  lg:flex-row lg:space-x-8 lg:mt-4">
           <NavItem to="/" label="Home" />
        
-          <li className="relative group" onClick={toggleDropdown}>
+          <li >
             <span className="cursor-pointer flex items-center">
             <NavItem to="/Tutorial" label="Tutorial" />
-              
+             
               <span
+              
                 className={`ml-1 transition-transform transform ${isDropdownOpen ? 'rotate-180' : 'rotate-0'}`}
                 style={{ transform: `rotate(${iconRotation}deg)` }}
               >
+                 <li className="relative group" onClick={toggleDropdown}>
                 ▼
+                </li>
               </span>
+             
             </span>
             {isDropdownOpen && (
               <ul className="absolute mt-2 space-y-2 bg-white border border-gray-200 rounded-lg z-50">
@@ -84,11 +91,10 @@ function Header() {
             </button>
           </div> 
           </div>
-          {/* ... (unchanged code) */}
           <div className="relative">
             <NavLinkButton
-              to="/LogIn"
-              label="Login"
+              to="/login"
+              label="login"
               className="inline-block bg-green-200 hover:bg-green-500 text-black rounded-l-full rounded-r-none px-4 py-2"
             />
             <NavLinkButton
@@ -129,3 +135,4 @@ const NavLinkButton = ({ to, label }) => (
   );
 
 export default Header;
+

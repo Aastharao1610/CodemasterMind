@@ -8,7 +8,7 @@ function About() {
     // <div className="flex flex-wrap justify-center items-center h-full">
     <div className="grid grid-rows-1 md:grid-rows-3 gap-8 mx-16 mb-8 mt-2 h-full">
       <Card
-        Content='lorem lorem  odi iusto, laboriosam facere? Maxime fugiat dicta quibusdam voluptatem consequuntur nesciunt impedit laborum sint enim soluta illum quam hic aperiam, similique asperiores? Sapiente doloribus itaque praesentium. Ducimus accusamus nesciunt quod ad ex, repudiandae laborum odit tempore, commodi doloribus rerum sint nemo consectetur iste maiores voluptatibus dolorum quas, illum soluta nostrum quasi eveniet facilis rem! Sit consequuntur totam corrupti culpa qui assumenda modi, laboriosam ipsum dolor fuga maiores? Fugit, commodi debitis. Nihil, ut nam eius alias illum tenetur iusto obcaecati explicabo? Optio exped... '
+        Content=" I'm Astha Rao, a dedicated front-end developer specializing in HTML, CSS, and JavaScript, with proficiency in frameworks like React and libraries such as Tailwind CSS. Leveraging my skills in C, C++, and Python, I embark on innovative projects that merge creativity with functionality. My recent endeavors include building intuitive user interfaces, responsive web designs, and dynamic web applications. Through meticulous attention to detail and a passion for clean code, I strive to deliver impactful solutions that elevate the user experience. Join me on a journey where technology meets creativity, and let's bring ideas to life, one project at a time."
        Image={('aastha.jpg')} 
         backgroundColor='bg-green-200'
         linkedInLink='https://www.linkedin.com/in/aastha-rao-358a92245/'

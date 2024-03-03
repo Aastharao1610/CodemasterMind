@@ -96,7 +96,7 @@ const HtmlEasy = () => {
       correctAnswer:'<body>'
     },
     {
-      question:'',
+      question:'Which tag is used for paragraph?',
       options:[' <par>','<paragraph>','<p>','<Text>'],
       correctAnswer:'<p>'
     },
@@ -248,12 +248,12 @@ const HtmlEasy = () => {
       correctAnswer:'<section>'
     },
     {
-    //   question:'What is the purpose of the <abbr> element in HTML?',
-    //   options:['Define a hyperlink ',
-    //   'Create an absolute link',
-    //   'Set the document language',
-    //   ' Define an abbreviation or acronym' ],
-    //   correctAnswer:' Define an abbreviation or acronym'
+      question:'What is the purpose of the <abbr> element in HTML?',
+      options:['Define a hyperlink ',
+      'Create an absolute link',
+      'Set the document language',
+      ' Define an abbreviation or acronym' ],
+      correctAnswer:' Define an abbreviation or acronym'
     }
     
   ]
@@ -326,8 +326,10 @@ const handleTimerRestart = () => {
   };
 
   return (
+    <>
+    <TimeTracking onTimeUpdate={handleTimeUpdate} onTimeLimitExceeded={handleTimeLimitExceeded} />
     <QuizLayout>
-      <TimeTracking onTimeUpdate={handleTimeUpdate} onTimeLimitExceeded={handleTimeLimitExceeded} />
+     
       <div className="max-w-lg mx-auto overflow-y-auto pt-10">
         <h1 className="text-3xl font-bold mb-6 text-center">HTML Easy Quiz</h1>
         {selectedQuestions.map((q, index) => (
@@ -365,6 +367,7 @@ const handleTimerRestart = () => {
         )}
       </div>
     </QuizLayout>
+    </>
   );
 };
 

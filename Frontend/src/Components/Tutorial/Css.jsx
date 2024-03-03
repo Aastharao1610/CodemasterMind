@@ -1,11 +1,70 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import TutorialLayout from './TutorialLayout'
 
-function css() {
+function Css() {
   return (
-    <div>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores quasi quam eius omnis adipisci voluptas asperiores error. Perspiciatis repellat ex aliquam, corporis est nihil magni nobis et numquam, dicta quia libero praesentium? Eius provident pariatur nesciunt perspiciatis debitis numquam ratione, sunt consequuntur ut odit laboriosam magni quidem necessitatibus porro molestiae sed fugiat quas suscipit perferendis, culpa unde itaque minus aperiam! Deleniti, facilis similique aperiam expedita, reprehenderit quam mollitia voluptate enim odit, ducimus praesentium. Molestiae, impedit. Dolores odit asperiores est, laborum magnam ab molestiae ipsum sunt praesentium veritatis ipsam vero porro modi. Voluptates, ducimus est laborum amet dignissimos odit saepe incidunt excepturi nisi expedita ratione nemo accusamus quis nulla eaque et assumenda optio eius magnam modi necessitatibus quod. Totam esse voluptas sed. Quas rem nulla illo? Distinctio, animi magni quidem nisi consectetur, culpa labore voluptatibus, laudantium laborum nulla odit! Ipsa voluptates vitae, incidunt, excepturi reiciendis voluptatem adipisci nihil iusto illum maxime aliquam provident amet dignissimos distinctio illo esse ducimus sit deleniti sint accusantium accusamus ad inventore. Atque amet eos voluptate quibusdam porro, labore quis commodi inventore itaque praesentium voluptas ipsam ab deserunt? Odio voluptates, dignissimos nemo fuga, aspernatur soluta, nam dolores qui perspiciatis incidunt illo perferendis accusamus ab fugit iusto magni cumque illum nihil. Ad maxime nisi corrupti nostrum cumque dolore, asperiores temporibus, nam, itaque quia ea ut? Suscipit, optio? Accusantium, perferendis vitae impedit assumenda commodi soluta quam nobis mollitia eum eligendi animi, blanditiis ex voluptatum! Optio, dignissimos distinctio, quod molestias natus aut qui, debitis ratione explicabo voluptates inventore quae ea eius commodi fuga possimus adipisci. Magni aperiam nostrum aspernatur facere dolores repellat, consequuntur modi sapiente expedita laboriosam laborum ab labore illum sint. Laudantium nesciunt possimus sed cupiditate ex unde fuga error dicta expedita voluptas vero aliquid corporis, voluptate, aspernatur facilis quisquam aliquam. Officiis sapiente beatae id inventore praesentium laudantium natus ipsa deserunt maiores! Unde laudantium cumque placeat quo cupiditate non dolores nostrum in omnis vitae! Asperiores ut commodi consequuntur animi placeat quas est harum consectetur obcaecati, ex ea facere cupiditate, voluptate, nam ullam magnam ducimus nobis! Nostrum cumque nesciunt, molestiae alias impedit quod consectetur illum deserunt dolores! Delectus corporis inventore expedita earum quos tempore totam reprehenderit quam facilis dolorum aperiam atque dicta unde animi, minus distinctio. Modi ab pariatur, unde repudiandae error maiores in rerum eveniet possimus provident. Numquam aspernatur quasi ex, excepturi voluptatum culpa temporibus quia similique ut enim itaque atque recusandae aliquam accusamus dolor commodi facere, at eum! eveniet cum nostrum blanditiis eius rerum minus corporis quae exercitationem! Debitis quis officia fugit incidunt ut accusamus magnam quia, repellendus harum!
-    </div>
+<TutorialLayout
+ Content={
+  <div >
+  <h1 className='text-3xl mx-96 my-6 text-green-600 underline'>CSS : Cascading Styling Sheet</h1>
+  <p className='text-lg'>
+   
+    {`
+
+CSS (Cascading Style Sheets) is a style sheet language used for describing the presentation of a document written in HTML or XML (including XML dialects such as SVG, MathML, or XHTML). CSS describes how elements should be rendered on screen, on paper, in speech, or on other media.
+CSS plays a crucial role in web development by providing the means to control the layout, styling, and appearance of HTML elements. It separates the structure and content of a web page (defined in HTML) from its visual presentation, allowing developers to create visually appealing and user-friendly websites.
+   
+   ` } 
+   <h1>Why to use css?</h1>
+
+    {`
+
+The primary purpose of CSS is to style HTML elements, defining their appearance, layout, and behavior across various devices and screen sizes. By applying stylesheets to HTML documents, developers can achieve consistency in design, improve user experience, and enhance accessibility.
+   
+   ` } 
+     </p>
+     <code>
+      <pre className='bg-zinc-700 text-white w-max mx-auto my-4 px-12'>
+            {`
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+/* Specific Styles */
+h1 {
+  color: #333;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+            `}
+            </pre>
+          </code>
+          <div className=''>
+   <p className='text-xl px-96 mb-10'>Basic boilerplate  boilerplate of the Css
+   </p>
+   <ol className='text-base list-disc mx-10 mb-6'>
+  
+   </ol>
+   <p className='text-xl mx-4'>This was the basic overview of Css boilerplate</p>
+   </div>
+
+  </div>
+  
+ }
+
+
+>
+  
+  
+    </TutorialLayout>
   )
 }
 
-export default css
+  
+
+export default Css

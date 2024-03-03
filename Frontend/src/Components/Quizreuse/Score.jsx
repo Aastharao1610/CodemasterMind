@@ -77,3 +77,21 @@ const Score = ({ selectedQuestions, selectedAnswers, timeElapsed ,isSubmitted}) 
 
 export default Score;
 
+/// Score.jsx
+
+// import { useSubmit } from './SumbitContext'
+// const Score = ({ selectedQuestions, selectedAnswers, timeElapsed }) => {
+//   const { isSubmitted } = useSubmit(); // Access isSubmitted state from context
+
+//   console.log('Props received in Score component:', { selectedQuestions, selectedAnswers, timeElapsed });
+
+//   if (!isSubmitted) {
+//     console.log('Quiz not submitted');
+//     return null; // Don't render the scoreboard if the quiz is not submitted
+//   }
+
+//   console.log('Props received in Score component:', { selectedQuestions, selectedAnswers, isSubmitted, timeElapsed });
+//   // Rest of the component logic...
+// };
+
+// export default Score;

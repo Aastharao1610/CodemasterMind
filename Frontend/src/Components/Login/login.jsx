@@ -1,22 +1,64 @@
 // Login.js
 
+// import React, { useState } from 'react';
+// import { Link, useNavigate } from 'react-router-dom';
+// import axios from 'axios';
+
+//   const login = () => {
+//     const history = useNavigate();
+//   const [username, setUsername] = useState('');
+//   const [email, setemail] = useState('');
+//   const [password, setPassword] = useState('');
+
+//   const handleLogin = async (e) => {
+//     e.preventDefault();
+//       console.log('Login request data:', { username, password,email });
+
+//     try {
+//       // const response = await axios.post('http://localhost:3000/api/v1/users/login', {
+//       //   username,
+//       //   email,
+//       //   password,
+//       const response=await axios({
+//         method:"post",
+//         baseURL:"http://localhost:3000/api/v1/",
+//         url:"users/login",
+       
+//       });
+      
+
+//       if (response.status === 200) {
+//         // Redirect or perform necessary action after successful login
+//         history('/');
+//       } else {
+//         alert('Invalid credentials');
+//       }
+//     } catch (error) {
+//       console.error('Error during login:', error);
+//       alert('An error occurred during login');
+//     }
+//   };
+
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
-  const Login = () => {
-    const history = useNavigate();
+const login = () => {
+  const history = useNavigate();
   const [username, setUsername] = useState('');
+  const [email, setemail] = useState('');
   const [password, setPassword] = useState('');
 
   const handleLogin = async (e) => {
     e.preventDefault();
+    console.log('Login request data:', { username, password, email });
 
     try {
-      const response = await axios.post('http://localhost:3000/login', {
-        username,
-        password,
-      });
+      const response = await axios.post("http://localhost:3000/api/v1/users/login")
+       username,
+       email,
+       password
+  
 
       if (response.status === 200) {
         // Redirect or perform necessary action after successful login
@@ -48,6 +90,21 @@ import axios from 'axios';
               autoComplete="username"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
+              required
+              className="mt-1 p-2 w-full border rounded-md"
+            />
+          </div>
+          <div>
+            <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+              Email
+            </label>
+            <input
+              id="email"
+              name="email"
+              type="text"
+              autoComplete="email"
+              value={email}
+              onChange={(e) =>setemail(e.target.value)}
               required
               className="mt-1 p-2 w-full border rounded-md"
             />
@@ -88,4 +145,4 @@ import axios from 'axios';
   );
 };
 
- export default Login;
+ export default login;

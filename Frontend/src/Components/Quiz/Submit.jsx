@@ -11,7 +11,7 @@ const SubmitButton = ({ onSubmit}) => {
   return (
     <NavLink to='/Scoreboard'>
       <button
-        className='bg-blue-400 px-5 border border-blue-100 rounded-2xl py-3 mx-1'
+        className='bg-green-500 px-5 border border-green-500 rounded-2xl py-3 mx-1'
         onClick={handleSubmit}
       >
         Submit

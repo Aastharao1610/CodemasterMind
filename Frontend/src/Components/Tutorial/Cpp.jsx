@@ -2,12 +2,12 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import TutorialLayout from './TutorialLayout'
 
-function JavaScript() {
+function Cpp() {
   return (
 <TutorialLayout
  Content={
   <div >
-  <h1 className='text-3xl mx-96 my-6 justify-center text-green-600 underline'>Javascript</h1>
+  <h1 className='text-3xl mx-96 my-6 text-green-600 underline'>CSS : Cascading Styling Sheet</h1>
   <p className='text-lg'>
    
     {`
@@ -40,7 +40,7 @@ function JavaScript() {
             </pre>
           </code>
           <div className=''>
-   <p className='text-xl px-96 mb-10'>Basic boilerplate  boilerplate of the Javascript
+   <p className='text-xl px-96 mb-10'>Basic boilerplate  boilerplate of the html5
    </p>
    <ol className='text-base list-disc mx-10 mb-6'>
     <li>{`<!DOCTYPE html> :This is a document type declaration (DOCTYPE) that specifies the HTML version being used. In this case, it's HTML5.`}</li>
@@ -54,7 +54,7 @@ function JavaScript() {
     <li>{`</body> :Closes the body Section.`}</li>
     <li>{`</html>:Closes the html section`}</li>
    </ol>
-   <p className='text-xl mx-4'>This was the basic overview of Javascript boilerplate</p>
+   <p className='text-xl mx-4'>This was the basic overview of Html boilerplate</p>
    </div>
 
   </div>
@@ -70,4 +70,4 @@ function JavaScript() {
 
   
 
-export default JavaScript
+export default Cpp
