@@ -8,9 +8,9 @@ import Score from '../../Quizreuse/Score';
 const CssEasy = () => {
   const questions = [
     {
-      question: 'What does HTML stand for?',
-      options: ['Hyper Text Markup Language', 'Highly Typed Machine Learning', 'Home Tool Markup Language', 'Hyperlink and Text Markup Language'],
-      correctAnswer: 'Hyper Text Markup Language',
+      question: 'What does CSS stand for?',
+      options: ['Cascading Styling Sheet', 'Computing Stlying Sheet', 'Colorful Styling Sheet', 'Creative Stling Sheet'],
+      correctAnswer: 'ascading Styling Sheet',
     },
     
     {

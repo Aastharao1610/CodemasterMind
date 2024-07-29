@@ -1,44 +1,3 @@
-// Login.js
-
-// import React, { useState } from 'react';
-// import { Link, useNavigate } from 'react-router-dom';
-// import axios from 'axios';
-
-//   const login = () => {
-//     const history = useNavigate();
-//   const [username, setUsername] = useState('');
-//   const [email, setemail] = useState('');
-//   const [password, setPassword] = useState('');
-
-//   const handleLogin = async (e) => {
-//     e.preventDefault();
-//       console.log('Login request data:', { username, password,email });
-
-//     try {
-//       // const response = await axios.post('http://localhost:3000/api/v1/users/login', {
-//       //   username,
-//       //   email,
-//       //   password,
-//       const response=await axios({
-//         method:"post",
-//         baseURL:"http://localhost:3000/api/v1/",
-//         url:"users/login",
-       
-//       });
-      
-
-//       if (response.status === 200) {
-//         // Redirect or perform necessary action after successful login
-//         history('/');
-//       } else {
-//         alert('Invalid credentials');
-//       }
-//     } catch (error) {
-//       console.error('Error during login:', error);
-//       alert('An error occurred during login');
-//     }
-//   };
-
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
@@ -52,26 +11,28 @@ const login = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
     console.log('Login request data:', { username, password, email });
-
-    try {
-      const response = await axios.post("http://localhost:3000/api/v1/users/login")
-       username,
-       email,
-       password
   
-
+    try {
+      const response = await axios.post('http://localhost:3000/api/v1/users/login', {
+        auth: {
+          username: username,
+          password: password,
+          email: email,
+        },
+      });
+  
       if (response.status === 200) {
-        // Redirect or perform necessary action after successful login
-        history('/');
-      } else {
-        alert('Invalid credentials');
+        // Handle successful login
+        // For example, store the token in local storage and navigate to another page
+        localStorage.setItem('token', response.data.token);
+        history('/dashboard');
       }
     } catch (error) {
-      console.error('Error during login:', error);
-      alert('An error occurred during login');
+      alert('oops!! We are very sorry,Something unusual happend during Login')
+      console.error('Login failed:', error.response?.data?.message || 'An error occurred during login');
     }
   };
-
+  
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-50">
       <div className="max-w-lg w-full p-6 space-y-8 bg-zinc-100 shadow-md">
@@ -146,3 +107,8 @@ const login = () => {
 };
 
  export default login;
+
+
+  
+  
+ 

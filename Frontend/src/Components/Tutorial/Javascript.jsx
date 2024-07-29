@@ -7,54 +7,78 @@ function JavaScript() {
 <TutorialLayout
  Content={
   <div >
-  <h1 className='text-3xl mx-96 my-6 justify-center text-green-600 underline'>Javascript</h1>
+  <h1 className='text-3xl text-center my-6  text-green-600 underline'>Javascript</h1>
   <p className='text-lg'>
    
     {`
 
-  HTML (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and structure of web content. Other technologies besides HTML are generally used to describe a web page's appearance/presentation (CSS) or functionality/behavior (JavaScript).
-  
-  "Hypertext" refers to links that connect web pages to one another, either within a single website or between websites. Links are a fundamental aspect of the Web. By uploading content to the Internet and linking it to pages created by other people, you become an active participant in the World Wide Web.
-  
-  HTML uses "markup" to annotate text, images, and other content for display in a Web browser. HTML markup includes special "elements" such as <head>, <title>, <body>, <header>, <footer>, <article>, <section>, <p>, <div>, <span>, <img>, <aside>, <audio>, <canvas>, <datalist>, <details>, <embed>, <nav>, <search>, <output>, <progress>, <video>, <ul>, <ol>, <li> and many others.
-  
-  An HTML element is set off from other text in a document by "tags", which consist of the element name surrounded by "<" and ">". The name of an element inside a tag is case-insensitive. That is, it can be written in uppercase, lowercase, or a mixture. For example, the <title> tag can be written as <Title>, <TITLE>, or in any other way. However, the convention and recommended practice is to write tags in lowercase.
+JavaScript is a high-level, interpreted programming language primarily used for making web pages interactive and dynamic. It is widely used for both client-side and server-side web development. JavaScript was originally developed by Netscape as a client-side scripting language for web browsers. Over time, it has evolved significantly, with several versions released to improve the language's capabilities, performance, and compatibility.
+
+
     ` } 
     
      </p>
      <code>
       <pre className='bg-zinc-700 text-white w-max mx-auto my-4 px-12'>
             {`
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Page Title</title>
-</head>
-<body>
-  <!-- Content goes here -->
-</body>
-</html>
-            `}
+ const greet = () => {\n  alert('Hello, world!');
+ button onclick="myFunction()">Click Me!</button>
+
+<script>
+function myFunction() {
+ let x = document.getElementById("demo");
+ x.style.fontSize = "25px";
+ x.style.color = "red";
+}
+</script>
+`}
+          
             </pre>
           </code>
           <div className=''>
    <p className='text-xl px-96 mb-10'>Basic boilerplate  boilerplate of the Javascript
    </p>
-   <ol className='text-base list-disc mx-10 mb-6'>
-    <li>{`<!DOCTYPE html> :This is a document type declaration (DOCTYPE) that specifies the HTML version being used. In this case, it's HTML5.`}</li>
-    <li>{`<html lang="en"> :This opens the HTML document. The lang="en" attribute indicates that the content is in English.`}</li>
-    <li>{`<head> :This is the head section of the HTML document. It contains meta-information, links to external stylesheets, and other resources that are not part of the visible content.`}</li>
-    <li>{`<meta charset="UTF-8"> :This meta tag sets the character set for the document to UTF-8, which is a widely used character encoding.`}</li>
-    <li>{`<title>Your Page Title</title>:This is the title of the webpage. It appears in the browser's title bar or tab.`}</li>
-    <li>{`</head> :Closes the head section.`}</li>
-    <li>{`<body> :This is the body section of the HTML document. It contains the visible content of the webpage.`}</li>
-    <li>{`<!-- Content goes here -->:All the cotent of html goes here..for example:-<p>,<div>,<h1> all the tags and elements of html `}</li>
-    <li>{`</body> :Closes the body Section.`}</li>
-    <li>{`</html>:Closes the html section`}</li>
+   <ol className=' list-disc mx-10 mb-6 text-xl'>
+    <h3 className='text-2xl py-6'>Here's an overview of some of the major versions of JavaScript:</h3>
+    <li>{`
+
+JavaScript 1.0 (1996):
+
+The initial version of JavaScript was released in 1996 by Netscape Communications Corporation.
+It provided basic scripting capabilities for web pages, such as form validation and dynamic content manipulation.`}</li>
+ <li>{`
+JavaScript 1.1 to 1.5:
+These versions introduced incremental improvements and enhancements to the language, including support for regular expressions, error handling with try...catch, and improvements to the Date object.
+`}</li>
+<li>{`
+ECMAScript 3 (1999):
+ECMAScript is the standardized specification for JavaScript. ECMAScript 3 was a major update that became the basis for modern JavaScript implementations.
+It introduced features like JSON object, Array methods (forEach(), map(), etc.), and more.
+`}</li>
+ <li>{`
+ECMAScript 5 (2009):
+ECMAScript 5 introduced significant enhancements to the language, including strict mode ('use strict'), Object.create(), Array.isArray(), and more.
+It also brought improved support for JSON and better reflection and property enumeration capabilities.
+`}</li>
+<li>{`
+ECMAScript 6 (2015) and beyond:
+ECMAScript 6, also known as ES6 or ECMAScript 2015, was a major milestone in JavaScript's evolution. It introduced numerous new features and syntax enhancements to the language.
+Key features introduced in ES6 include let and const for variable declarations, arrow functions, classes, template literals, destructuring assignments, and more.
+Since ES6, ECMAScript has been following a yearly release cycle, introducing new features and improvements regularly. Subsequent versions like ES7 (2016), ES8 (2017), ES9 (2018), ES10 (2019), ES11 (2020), ES12 (2021), and so on, have brought additional features and refinements to the language.
+`}</li>
+<li>{`
+ECMAScript 2022 and beyond:
+ECMAScript continues to evolve with new proposals and features aimed at improving developer productivity, language expressiveness, and performance.
+Each year, the ECMAScript specification evolves with new features and improvements, often driven by the needs of web developers and advancements in web technology.
+JavaScript is an ever-evolving language, with ongoing efforts to improve its capabilities, performance, and compatibility across different platforms and environments. Developers can take advantage of modern JavaScript features to build powerful and efficient web applications.
+
+
+
+
+
+`}</li>
    </ol>
-   <p className='text-xl mx-4'>This was the basic overview of Javascript boilerplate</p>
+   
    </div>
 
   </div>
